@@ -2,7 +2,7 @@
 Running the wizard will combine all the meshes on the chosen gameObject and its children that share the same material. If there is more than 1 material in all sub-objects, separate gameObjects will be created so that each object has one mesh with one material unique in the group, and will be parented under a new object. A prefab will be created from the combined gameObject in the root of the Assets folder, where all the newly created merged meshes will be created also. The original will be set inactive in the scene and the combined gameObject will be put in its position.
 
 ## How it works?
-Put the provided script in any folder. In the top menu a new entry will appear ("E.S. Tools/Mesh Combine Wizard"). Picking this option will run the wizard. Pick the object from the scene that you wish to combine and clik _Create_.
+Put the provided script in any Editor folder. In the top menu a new entry will appear ("E.S. Tools/Mesh Combine Wizard"). Picking this option will run the wizard. Pick the object from the scene that you wish to combine and clik _Create_.
 
 ## Benefits:
 * Lowers the amount of draw calls, usually dramatically.
