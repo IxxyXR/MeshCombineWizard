@@ -45,6 +45,7 @@ public class MeshCombineWizard : ScriptableWizard {
 
             Mesh combinedMesh = new Mesh();
             combinedMesh.CombineMeshes(combine);
+            materialName += "_" + combinedMesh.GetInstanceID();
             AssetDatabase.CreateAsset(combinedMesh, "Assets/CombinedMeshes_" + materialName + ".asset");
 
             string goName = (materialToMeshFilterList.Count > 1)? "CombinedMeshes_" + materialName : "CombinedMeshes_" + parentOfObjectsToCombine.name;
